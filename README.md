@@ -7,3 +7,6 @@ When plugin installed , go to **Plugins** on Dashboard and active Plugin ***Inse
 ### Using
 Go to **Settings/Insert Header and Footers**
 ![](https://i.imgur.com/4Hqa3fb.png)
+# Contact Us
+ - Website: [https://bytesoft.vn](https://bytesoft.vn)
+ - Email: [thuandc@bytesoft.net](mailto:thuandc@bytesoft.net)

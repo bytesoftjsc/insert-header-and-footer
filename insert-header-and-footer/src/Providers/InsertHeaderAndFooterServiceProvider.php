@@ -21,7 +21,6 @@ class InsertHeaderAndFooterServiceProvider extends ServiceProvider
     {
         $this->setNamespace('plugins/insert-header-and-footer')
             ->loadAndPublishConfigurations(['permissions'])
-            ->loadMigrations()
             ->loadAndPublishViews()
             ->loadAndPublishTranslations()
             ->loadRoutes(['web']);
@@ -32,7 +31,7 @@ class InsertHeaderAndFooterServiceProvider extends ServiceProvider
             dashboard_menu()->registerItem([
                 'id' => 'cms-plugins-insert-header-and-footer',
                 'priority' => 9,
-                'parent_id' => 'cms-core-settings',
+                'parent_id' => 'cms-core-appearance',
                 'name' => 'plugins/insert-header-and-footer::insert-header-and-footer.name',
                 'url' => route('insert-header-and-footer.index'),
                 'permissions' => ['insert-header-and-footer.index'],
