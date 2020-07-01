@@ -3,7 +3,6 @@
 namespace Botble\InsertHeaderAndFooter\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Botble\Base\Supports\Helper;
 use Event;
 use Botble\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Routing\Events\RouteMatched;
@@ -14,7 +13,6 @@ class InsertHeaderAndFooterServiceProvider extends ServiceProvider
 
     public function register()
     {
-        Helper::autoload(__DIR__ . '/../../helpers');
     }
 
     public function boot()
@@ -23,7 +21,8 @@ class InsertHeaderAndFooterServiceProvider extends ServiceProvider
             ->loadAndPublishConfigurations(['permissions'])
             ->loadAndPublishViews()
             ->loadAndPublishTranslations()
-            ->loadRoutes(['web']);
+            ->loadRoutes(['web'])
+            ->publishAssets();
 
         $this->app->register(HookServiceProvider::class);
 

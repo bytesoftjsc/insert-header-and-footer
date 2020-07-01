@@ -4,6 +4,6 @@
     "provider": "Botble\\InsertHeaderAndFooter\\Providers\\InsertHeaderAndFooterServiceProvider",
     "author": "Bytesoft (thuandc@bytesoft.net)",
     "url": "https://bytesoft.vn",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Insert code to header and footer"
 }
